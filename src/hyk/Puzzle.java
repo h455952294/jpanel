@@ -18,7 +18,9 @@ class J_JPanel extends JPanel
 
   public J_JPanel()throws IOException
   {
-      File f = new File("D:\\tupian\\target\\test.jpg");
+      //File f = new File("D:\\tupian\\target\\test.jpg");
+      String root = new File("").getCanonicalPath();
+      File f = new File(root+ File.separator+"images"+File.separator+"one"+File.separator+"test.png");
       m_image = ImageIO.read(f);
   }
 
@@ -34,6 +36,7 @@ class Puzzle extends JFrame
 {
 
   private static final long serialVersionUID = 1L;
+  public  String root = new File("").getCanonicalPath();//获取项目的根路径 --F:/mygit/jPanel
   int i,j;
   
   int gx[] = {0,1,2};
@@ -56,7 +59,7 @@ class Puzzle extends JFrame
      for(j = 0;j < 9;j ++)
       {
           //G:\game\target\map_0_14
-       pic_name[j] = String.valueOf("D:\\tupian\\target\\one\\map_"+i+"_"+j+".jpg");
+       pic_name[j] = String.valueOf(root+File.separator+"images"+File.separator+"one"+File.separator+"map_"+i+"_"+j+".jpg");
        ic[j] = new ImageIcon(pic_name[j]);
       }
  
@@ -101,8 +104,8 @@ class Puzzle extends JFrame
                           //开启,让其他线程进不来
                           isRunning = true;
                           //获取初始化状态
-                          int[] rd_number = randomnumber();
-                         // int[] rd_number = new int []{7,9,1,5,8,4,6,3,2};
+                          //int[] rd_number = randomnumber();
+                          int[] rd_number = new int []{7,9,1,5,8,4,6,3,2};
 
                           for (int i = 0; i < rd_number.length; i++) {
                         	    if(rd_number[i]==9){
@@ -242,15 +245,16 @@ class Puzzle extends JFrame
     return n;
   }
 
-
   
   public static void main(String args[]) throws IOException
   {
     Puzzle app = new Puzzle();
     app.setDefaultCloseOperation(EXIT_ON_CLOSE);
-    app.setLocation(Toolkit.getDefaultToolkit().getScreenSize().width/3, Toolkit.getDefaultToolkit().getScreenSize().height/4);
-    app.setSize(310,350);
-    app.setVisible(true);
-    app.setResizable(false); 
+      app.setLocation(Toolkit.getDefaultToolkit().getScreenSize().width / 3, Toolkit.getDefaultToolkit().getScreenSize().height / 4);
+    app.setSize(310, 350);
+      app.setVisible(true);
+    app.setResizable(false);
+
+      System.out.print(app.root);
   }
 }

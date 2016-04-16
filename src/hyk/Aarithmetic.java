@@ -112,7 +112,7 @@ public class Aarithmetic {
     public static ArrayList<JieDian> CloseBiao; 
     
     public static Stack<JieDian> stack;
-    public static Stack<JieDian> myStack = new Stack<>();
+    public static Stack<JieDian> myStack = new Stack<JieDian>();
     public static int  Pointernum= 0;
     
     class JieDian{
