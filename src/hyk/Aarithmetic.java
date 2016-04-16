@@ -5,7 +5,7 @@ import java.util.Random;
 import java.util.Stack;
 
 
-//------------------<使用A*算法找出八码图目标状态的实现路径>--------------------
+//------------------<使用A*算法找出八码图目标状态的实现路径>--------------------hywhywh
 public class Aarithmetic {
 
 	 public static void main(String[] args) {
