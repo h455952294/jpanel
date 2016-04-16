@@ -1,4 +1,4 @@
-package org.hyk.demo;
+package hyk;
 
 import java.util.ArrayList;
 import java.util.Random;
@@ -7,6 +7,15 @@ import java.util.Stack;
 
 //------------------< π”√A*À„∑®’“≥ˆ∞À¬ÎÕºƒø±Í◊¥Ã¨µƒ µœ÷¬∑æ∂>--------------------hywhywh
 //test≤‚ ‘
+//test≤‚ ‘hyw   hyw
+//test≤‚ ‘hyw   hyw
+//test≤‚ ‘hyw   hyw
+//test≤‚ ‘hyw   hyw
+//test≤‚ ‘hyw   hyw
+//test≤‚ ‘hyw   hyw
+//test≤‚ ‘hyw   hyw
+//test≤‚ ‘hyw   hyw
+//
 public class Aarithmetic {
 
 	 public static void main(String[] args) {

@@ -1,4 +1,4 @@
-package org.hyk.demo;
+package hyk;
 
 import javax.imageio.ImageIO;
 import javax.swing.*;
