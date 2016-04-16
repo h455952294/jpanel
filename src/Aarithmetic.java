@@ -1,4 +1,3 @@
-package hyk;
 
 import java.util.ArrayList;
 import java.util.Random;

@@ -1,5 +1,3 @@
-package hyk;
-
 import javax.imageio.ImageIO;
 import javax.swing.*;
 import java.awt.*;
@@ -29,6 +27,7 @@ class J_JPanel extends JPanel
         g.drawImage(m_image, 0, 0, 270, 270, this);
     }
 }
+
 
 
 class Puzzle extends JFrame
