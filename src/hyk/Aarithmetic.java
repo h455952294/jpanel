@@ -6,6 +6,7 @@ import java.util.Stack;
 
 
 //------------------<使用A*算法找出八码图目标状态的实现路径>--------------------hywhywh
+//test测试
 public class Aarithmetic {
 
 	 public static void main(String[] args) {
